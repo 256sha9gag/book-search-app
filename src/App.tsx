@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-function App() {
+const App: React.FC = (): JSX.Element => {
   return (
     <div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
