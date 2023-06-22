@@ -1,4 +1,5 @@
 import { type DefaultTheme } from 'styled-components'
+import headerBG from '../assets/headerBG.jpeg'
 
 const baseTheme: DefaultTheme = {
   colors: {
@@ -6,6 +7,9 @@ const baseTheme: DefaultTheme = {
     secondary: 'gray',
     ligth: 'white',
     dark: 'gray'
+  },
+  background: {
+    image: headerBG
   }
 }
 
