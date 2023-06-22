@@ -8,5 +8,8 @@ declare module 'styled-components' {
       ligth: string
       dark: string
     }
+    background: {
+      image: any
+    }
   }
 }
