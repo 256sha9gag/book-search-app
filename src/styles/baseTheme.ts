@@ -6,7 +6,8 @@ const baseTheme: DefaultTheme = {
     main: 'skyblue',
     secondary: 'gray',
     ligth: 'white',
-    dark: 'gray'
+    dark: 'gray',
+    black: 'black'
   },
   background: {
     image: headerBG
