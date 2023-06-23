@@ -27,7 +27,13 @@ export const Input = styled.input`
   font: 16px 'MontserratRegular';
   flex-basis: 40%;
   padding: 10px;
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.black};
   border: none;
   border-radius: 5px;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 3px solid ${({ theme }) => theme.colors.main};
+  }
+
 `
