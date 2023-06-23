@@ -7,6 +7,7 @@ declare module 'styled-components' {
       secondary: string
       ligth: string
       dark: string
+      black: string
     }
     background: {
       image: any
