@@ -2,14 +2,24 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 const Label = styled.label`
-  color: white;
+  font: 16px 'MontserratRegular';
+  color: ${({ theme }) => theme.colors.ligth};
 `
 
 const InputDropdown = styled.input`
   display: flex;
+  font: 16px 'MontserratRegular';
+  color: ${({ theme }) => theme.colors.dark};
+  padding: 10px;
+  border: none;
   flex-basis: 150px;
   height: 38px;
   cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 3px solid ${({ theme }) => theme.colors.main};
+  }
 `
 
 const InputWrapper = styled.div`
@@ -26,10 +36,8 @@ const ChevronIconWrapper = styled.div`
 
 const OptionContainer = styled.ul`
   position: absolute;
-  font: var(--font-normal);
   background-color: white;
-  width: 150px;
-  padding: 0;
+  width: 210px;
   list-style-type: none;
 `
 
@@ -45,6 +53,8 @@ const Option = styled.li`
 
 const DropdownContainer = styled.div`
   position: relative;
+  font: 16px 'MontserratRegular';
+  color: ${({ theme }) => theme.colors.dark};
 `
 
 const Dropdown = (): JSX.Element => {
@@ -88,13 +98,13 @@ const Dropdown = (): JSX.Element => {
           <Option onClick={() => { handleOptionClick('computers') }}>
             computers
           </Option>
-          <Option onClick={() => { handleOptionClick('computers') }}>
+          <Option onClick={() => { handleOptionClick('history') }}>
             history
           </Option>
-          <Option onClick={() => { handleOptionClick('computers') }}>
+          <Option onClick={() => { handleOptionClick('medical') }}>
             medical
           </Option>
-          <Option onClick={() => { handleOptionClick('computers') }}>
+          <Option onClick={() => { handleOptionClick('poetry') }}>
             poetry
           </Option>
         </OptionContainer>
