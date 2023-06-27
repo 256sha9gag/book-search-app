@@ -15,6 +15,7 @@ export const Title = styled.h1`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+  gap: 20px
 `
 
 export const InputWrapper = styled.div`
@@ -29,11 +30,9 @@ export const Input = styled.input`
   padding: 10px;
   color: ${({ theme }) => theme.colors.black};
   border: none;
-  border-radius: 5px;
   &:hover,
   &:active,
   &:focus {
     outline: 3px solid ${({ theme }) => theme.colors.main};
   }
-
 `

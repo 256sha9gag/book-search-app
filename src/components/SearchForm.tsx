@@ -1,7 +1,7 @@
 import React, { type FormEvent, useState, useRef } from 'react'
 import { Form, Input, InputWrapper } from '../styles/components'
 import SearchButton from './SearchButton'
-import Dropdown from './Dropdown'
+import Dropdowns from './Dropdowns/Dropdowns'
 
 const SearchForm: React.FC = (): JSX.Element => {
   const [searchValue, setSearchValue] = useState<string>('')
@@ -20,7 +20,7 @@ const SearchForm: React.FC = (): JSX.Element => {
     <Form onSubmit={handleSubmit}>
       <InputWrapper>
         <Input
-          placeholder='Enter book title or author...'
+          placeholder='Search...'
           ref={inputRef}
           type="text"
           name="search"
@@ -30,7 +30,7 @@ const SearchForm: React.FC = (): JSX.Element => {
         <SearchButton
         />
       </InputWrapper>
-      <Dropdown />
+      <Dropdowns />
     </Form>
   )
 }
